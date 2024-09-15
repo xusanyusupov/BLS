@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins";
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+
+a{
+    text-decoration: none;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+// scroll 
+
+
+$header-text-color: #8d96ccde;
+$btn-color: #047857;
+$btn-text-color: rgb(24, 209, 24); 
+$header-link-bg: #d7f5e7;
+$btn-card: #FF002B;
+$border-r: 15px;
+$transition: .3s ease;
+$bg-black: #000;
+$bg-white: #fff;

@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bellissimo Pizza - Tekin yetkazish berish</title>
+    <link rel="icon" href="./assets/img/image.webp">
+    <!-- css  -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font-awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <div class="head__item-wrapper">
+                    <!-- logo head  -->
+                    <div class="head__logo">
+                        <a href="index.html"><img src="./assets/img/head logo.webp" alt=""></a>
+                    </div>
+                    <!-- location start -->
+                    <div onclick="showLoc()" class="head__loc">
+                        <button><i class="fa-solid fa-location-dot"></i></button>
+                        <div class="head__loc-text">
+                            <p>Shahar:</p>
+                            <b>Toshkent</b>
+                        </div>
+                    </div>
+                    <div onclick="hideLoc()" class="regions">
+                        <div class="regions__item">
+                            <a href="#">Samarqand</a>
+                            <a href="#">Andijon</a>
+                            <a href="#">Qo'qon</a>
+                            <a href="#">Faqg'ona</a>
+                            <a href="#">Chirchiq</a>
+                            <a href="#">Namangan</a>
+                            <a href="#">Buxoro</a>
+                            <a href="#">Olmaliq</a>
+                            <a href="#">Nurafshon</a>
+                            <a href="#">Angren</a>
+                            <a href="#">Yangiyul</a>
+                        </div>
+                    </div>
+                    <!-- location end  -->
+                    <!-- call center  -->
+                    <div class="head__call">
+                        <button><i class="fa-solid fa-phone"></i>1174</button>
+                        <div class="head__call-text">
+                            <p>Yagona aloq <br> markazi</p>
+                        </div>
+                    </div>
+                    <!-- yetkazish -->
+                    <div title="Bepul Yetkazish" class="head__DST">
+                        <button>24/7</button>
+                        <div class="head__DST-text">
+                            <p>Bepul yetkazish endi 24/7 <br> mavjud</p>
+                        </div>
+                    </div>
+                    <!-- uz/ru  -->
+                    <div class="head__language">
+                        <div class="language">
+                            <img class="country1" src="./assets/img/uzFlag.svg" alt="">
+                            <img class="country2" src="./assets/img/rusFlag.svg" alt="">
+                        </div>
+                    </div>
+                    <!-- logo halal  -->
+                    <div class="head__halal">
+                        <img src="./assets/img/xalal.webp" alt="">
+                    </div>
+                    <!-- kirish btn  -->
+                    <div class="head__btn">
+                        <button>Kirish</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- hero start  -->
+        <div class="hero__item-wrapper">
+            <button id="scrollLeft" class="left__btn"><i class="fa-solid fa-left-long"></i></button>
+            <div class="hero">
+                <img src="./assets/img/ca1.webp" alt="">
+                <img src="./assets/img/ca2.webp" alt="">
+                <img src="./assets/img/ca3.webp" alt="">
+                <img src="./assets/img/ca1.webp" alt="">
+                <img src="./assets/img/ca2.webp" alt="">
+                <img src="./assets/img/ca3.webp" alt="">
+            </div>
+            <button id="scrollRight" class="right__btn"><i class="fa-solid fa-right-long"></i></button>
+        </div>
+        <!-- hero end  -->
+
+        <!-- collection start  -->
+        <div class="container">
+            <div class="services">
+                <div class="take_leave">
+                    <button class="take">Yetkazib berish</button>
+                    <button class="leave">Olib ketish</button>
+                </div>
+                <div class="take__location">
+                    <button>
+                        Yetkazib berish manzilini tanlang
+                    </button>
+                </div>
+            </div>
+
+            <div class="categories">
+                <div class="categories__wrapper">
+                    <div class="categories__links">
+                        <button>Kombo</button>
+                        <button>Pitsa</button>
+                        <button>Gazaklar</button>
+                        <button>Ichimliklar</button>
+                        <button>Salatlar</button>
+                        <button>Desertlar</button>
+                        <button>Souslar</button>
+                    </div>
+
+                    <div class="categories__btn">
+                        <button>Savatcha | <span>0</span> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- collection end  -->
+
+        <section>
+            <div class="container">
+                <div class="card__wrapper">
+                    <h3 class="title__card">Kombo</h3>
+                    <div class="card__items">
+                        <div class="card">
+                            <img src="./assets/img/studentSET1.webp" alt="">
+                            <b>Student 1</b>
+                            <p>Bellister, 3ta tovuqli strips va razliv ichimlik - tez va mazali tushlik uchun ajoyib
+                                tanlov .</p>
+                            <strong>39 000 so'm</strong>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/img/studentSETI2.webp" alt="">
+                            <b>Student 2</b>
+                            <p>Bellister, 3ta tovuqli strips va razliv ichimlik - tez va mazali tushlik uchun ajoyib
+                                tanlov .</p>
+                            <strong>39 000 so'm</strong>
+                        </div>
+                        <div class="card pos">
+                            <img src="./assets/img/studentSET1.webp" alt="">
+                            <b>Do'stlar 1</b>
+                            <p>2 ta bellister 5 ta tovuqli stripts va 2 ta razviy ichimlik - do'stlar bilan birga ayni
+                                muddao.</p>
+                            <span class="skidka">92 000 so'm <img src="./assets/img/red line.svg" alt=""></span>
+                            <strong>75 000 so'm</strong>
+                        </div>
+                        <div class="card pos">
+                            <img src="./assets/img/student3.webp" alt="">
+                            <b>Do'stlar 2</b>
+                            <p>2 ta bellister 5 ta tovuqli stripts va 2 ta razviy ichimlik - do'stlar bilan birga ayni
+                                muddao.</p>
+                            <span class="skidka">98 000 so'm <img src="./assets/img/red line.svg" alt=""></span>
+                            <strong>85 000 so'm</strong>
+                        </div>
+                        <!-- birinchi 4 qator tugadi -->
+                        <!-- ikkinchi 4 qator boshlandi  -->
+                        <div class="card pos">
+                            <img src="./assets/img/bayram1.webp" alt="">
+                            <b>Donar Juftlik</b>
+                            <p>Xitimiz donar pitsa yangi tovuqli Donar bilan foydali nir comboda.</p>
+                            <span class="skidka">129 000 so'm <img src="./assets/img/red line.svg" alt=""></span>
+                            <strong>89 000 so'm</strong>
+                        </div>
+                        <div class="card pos">
+                            <img src="./assets/img/barakali1.webp" alt="">
+                            <b>Katta bazm 2</b>
+                            <p>2ta 35sm'lik pitsa, 8ta tovuqli strpits 16ta sinnamon rollar va 2ta coca-cola .</p>
+                            <span class="skidka">129 000 so'm <img src="./assets/img/red line.svg" alt=""></span>
+                            <strong>89 000 so'm</strong>
+                        </div>
+                        <div class="card pos">
+                            <img src="./assets/img/tantana.webp" alt="">
+                            <b>Katta bazm 1</b>
+                            <p>Xitimiz donar pitsa yangi tovuqli Donar bilan foydali nir comboda.</p>
+                            <span class="skidka">486 000 so'm <img src="./assets/img/red line.svg" alt=""></span>
+                            <strong>385 000 so'm</strong>
+                        </div>
+                        <div class="card pos">
+                            <img src="./assets/img/tantana1.webp" alt="">
+                            <b>Donar Juftlik</b>
+                            <p>Xitimiz donar pitsa yangi tovuqli Donar bilan foydali nir comboda.</p>
+                            <span class="skidka">486 000 so'm <img src="./assets/img/red line.svg" alt=""></span>
+                            <strong>435 000 so'm</strong>
+                        </div>
+                    </div>
+                    <h3 class="title__card">Pitsalar</h3>
+                    <div class="card__items">
+                        <!-- card 1 start  -->
+                        <div onclick="showwrapper()" class="card">
+                            <img src="./assets/img/pitsa1.webp" alt="">
+                            <h3>Mr.PeP</h3>
+                            <p>Mazali Pepironi mayin mosorella bilan utg'unlikda ushbu pitsaning qutisini bolalar
+                                bo'yashlari mumkin</p>
+                            <strong>39 000 so'mdan</strong>
+                        </div>
+                        <!-- card 2 end  -->
+                        <!-- qo'shimcha  -->
+                        <div onclick="hidewrapper()" class="pitsa__wrapper">
+                            <div class="pitsa__info">
+                                <!-- 1 chi katta div -->
+                                <div class="pitsa__img">
+                                    <img src="./assets/img/pitsa1.webp" alt="">
+                                    <strong>Mr.Pep</strong>
+                                    <p>Mazali pepperoni mayin motsarella bilan uyg'unlikda. Ushbu pitsaning qutisini
+                                        bolalar bo'yashlari mumkin.</p>
+                                    <p class="pitsa__line"></p>
+                                    <b>Tanlangan bort:</b><span> Mavjud emas</span>
+                                    <b>Masalliqlar: </b><span> Tanlanmagan</span>
+                                    <div class="cena">
+                                        <strong>39 000 so'm </strong>
+                                    </div>
+                                </div>
+                                <!-- 2 chi katta div  -->
+                                <div class="pitsaInfo">
+                                    <div class="ichki">
+                                        <b>Pitsa kattaligi</b>
+                                        <button>Pitsa</button>
+                                        <div class="pitsa__turi">
+                                            <button>Qalin</button>
+                                            <select>
+                                                <option>Bort qo'shish</option>
+                                                <option>Bort qo'shish</option>
+                                                <option>Bort qo'shish</option>
+                                            </select>
+                                        </div>
+                                        <div class="pitsa__masalliq">
+                                            <b>Masalliqlarni tanlang</b>
+                                            <span>0</span>
+                                        </div>
+                                    </div>
+                                    <div class="pitsa__savatga">
+                                        <button>Savatga qo'shish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- qo'shimcha end  -->
+                        <!-- card 2 start  -->
+                        <div onclick="show2Card()" class="card">
+                            <img src="./assets/img/pitsa2.webp" alt="">
+                            <h3>Frimen</h3>
+                            <p>Qarsildoq kartoshka fri va bolajonlar yoqtirgan sosiskalar Ushbu pitsaning qutisini
+                                bolalar bo'yashlari mumkin</p>
+                            <strong>39 000 so'mdan</strong>
+                        </div>
+                        <!-- card 2 end  -->
+                        <div onclick="hide2Card()" class="pitsa__wrapper" id="showcardtwo">
+                            <div class="pitsa__info">
+                                <!-- 1 chi katta div -->
+                                <div class="pitsa__img">
+                                    <img src="./assets/img/pitsa2.webp" alt="">
+                                    <strong>Frimen</strong>
+                                    <p>Mazali pepperoni mayin motsarella bilan uyg'unlikda. Ushbu pitsaning qutisini
+                                        bolalar bo'yashlari mumkin.</p>
+                                    <p class="pitsa__line"></p>
+                                    <b>Tanlangan bort:</b><span> Mavjud emas</span>
+                                    <b>Masalliqlar: </b><span> Tanlanmagan</span>
+                                    <div class="cena">
+                                        <strong>39 000 so'm </strong>
+                                    </div>
+                                </div>
+                                <!-- 2 chi katta div  -->
+                                <div class="pitsaInfo">
+                                    <div class="ichki">
+                                        <b>Pitsa kattaligi</b>
+                                        <button>Pitsa</button>
+                                        <div class="pitsa__turi">
+                                            <button>Qalin</button>
+                                            <select>
+                                                <option>Bort qo'shish</option>
+                                                <option>Bort qo'shish</option>
+                                                <option>Bort qo'shish</option>
+                                            </select>
+                                        </div>
+                                        <div class="pitsa__masalliq">
+                                            <b>Masalliqlarni tanlang</b>
+                                            <span>0</span>
+                                        </div>
+                                    </div>
+                                    <div class="pitsa__savatga">
+                                        <button>Savatga qo'shish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- card 3 start  -->
+                        <div onclick="thereshow()"  class="card">
+                            <img src="./assets/img/pitsa3.webp" alt="">
+                            <h3>Go'shli Mix</h3>
+                            <p>Pitsa barbekyu va burger souslar solingan donar kabob va mol go'shti va pepironi
+                                kolbasasi bilaln haqiqiy </p>
+                            <strong>92 000 so'mdan</strong>
+                        </div>
+                        <!-- card 3 end -->
+                        <div onclick="therehide()" class="pitsa__wrapper" id="showcardthere">
+                            <div class="pitsa__info">
+                                <!-- 1 chi katta div -->
+                                <div class="pitsa__img">
+                                    <img src="./assets/img/pitsa3.webp" alt="">
+                                    <strong>Go'shli Mix</strong>
+                                    <p>Mazali pepperoni mayin motsarella bilan uyg'unlikda. Ushbu pitsaning qutisini
+                                        bolalar bo'yashlari mumkin.</p>
+                                    <p class="pitsa__line"></p>
+                                    <b>Tanlangan bort:</b><span> Mavjud emas</span>
+                                    <b>Masalliqlar: </b><span> Tanlanmagan</span>
+                                    <div class="cena">
+                                        <strong>92 000 so'm </strong>
+                                    </div>
+                                </div>
+                                <!-- 2 chi katta div  -->
+                                <div class="pitsaInfo">
+                                    <div class="ichki">
+                                        <b>Pitsa kattaligi</b>
+                                        <button>Pitsa</button>
+                                        <div class="pitsa__turi">
+                                            <button>Qalin</button>
+                                            <select>
+                                                <option>Bort qo'shish</option>
+                                                <option>Bort qo'shish</option>
+                                                <option>Bort qo'shish</option>
+                                            </select>
+                                        </div>
+                                        <div class="pitsa__masalliq">
+                                            <b>Masalliqlarni tanlang</b>
+                                            <span>0</span>
+                                        </div>
+                                    </div>
+                                    <div class="pitsa__savatga">
+                                        <button>Savatga qo'shish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <!-- card 4 start  -->
+                        <div onclick="cardfourshow()" class="card">
+                            <img src="./assets/img/pitsa4.webp" alt="">
+                            <h3>Donar pitsa</h3>
+                            <p>Pitsa barbekyu va burger souslar solingan donar kabob va mol go'shti va pepironi
+                                kolbasasi bilaln haqiqiy </p>
+                            <strong>63 000 so'mdan</strong>
+                        </div>
+                        <div onclick="cardfourhide()" class="pitsa__wrapper" id="showcardfour">
+                            <div class="pitsa__info">
+                                <!-- 1 chi katta div -->
+                                <div class="pitsa__img">
+                                    <img src="./assets/img/pitsa4.webp" alt="">
+                                    <strong>Donar Pita</strong>
+                                    <p>Mazali pepperoni mayin motsarella bilan uyg'unlikda. Ushbu pitsaning qutisini
+                                        bolalar bo'yashlari mumkin.</p>
+                                    <p class="pitsa__line"></p>
+                                    <b>Tanlangan bort:</b><span> Mavjud emas</span>
+                                    <b>Masalliqlar: </b><span> Tanlanmagan</span>
+                                    <div class="cena">
+                                        <strong>63 000 so'm </strong>
+                                    </div>
+                                </div>
+                                <!-- 2 chi katta div  -->
+                                <div class="pitsaInfo">
+                                    <div class="ichki">
+                                        <b>Pitsa kattaligi</b>
+                                        <button>Pitsa</button>
+                                        <div class="pitsa__turi">
+                                            <button>Qalin</button>
+                                            <select>
+                                                <option>Bort qo'shish</option>
+                                                <option>Bort qo'shish</option>
+                                                <option>Bort qo'shish</option>
+                                            </select>
+                                        </div>
+                                        <div class="pitsa__masalliq">
+                                            <b>Masalliqlarni tanlang</b>
+                                            <span>0</span>
+                                        </div>
+                                    </div>
+                                    <div class="pitsa__savatga">
+                                        <button>Savatga qo'shish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <!-- birinchi torttalik cardlar tugadi  -->
+                        <!-- ikkinchi torttalik cardlar boshlandi -->
+                        <div onclick="showFive()" class="card">
+                            <img src="./assets/img/pitsa5.webp" alt="">
+                            <h3>Jo'jacha Ranch</h3>
+                            <p>Pitsa barbekyu va burger souslar solingan donar kabob va mol go'shti va pepironi
+                                kolbasasi bilaln haqiqiy </p>
+                            <strong>53 000 so'mdan</strong>
+                        </div>
+                        <!-- card 2/1 end  -->
+                        <div onclick="hideFive()" class="pitsa__wrapper" id="showcardfive">
+                            <div class="pitsa__info">
+                                <!-- 1 chi katta div -->
+                                <div class="pitsa__img">
+                                    <img src="./assets/img/pitsa5.webp" alt="">
+                                    <strong>Jo'jacha Ranch</strong>
+                                    <p>Pitsa barbekyu va burger souslar solingan donar kabob va mol go'shti va pepironi kolbasasi bilaln haqiqiy</p>
+                                    <p class="pitsa__line"></p>
+                                    <b>Tanlangan bort:</b><span> Mavjud emas</span>
+                                    <b>Masalliqlar: </b><span> Tanlanmagan</span>
+                                    <div class="cena">
+                                        <strong>53 000 so'm </strong>
+                                    </div>
+                                </div>
+                                <!-- 2 chi katta div  -->
+                                <div class="pitsaInfo">
+                                    <div class="ichki">
+                                        <b>Pitsa kattaligi</b>
+                                        <button>Pitsa</button>
+                                        <div class="pitsa__turi">
+                                            <button>Qalin</button>
+                                            <select>
+                                                <option>Bort qo'shish</option>
+                                                <option>Bort qo'shish</option>
+                                                <option>Bort qo'shish</option>
+                                            </select>
+                                        </div>
+                                        <div class="pitsa__masalliq">
+                                            <b>Masalliqlarni tanlang</b>
+                                            <span>0</span>
+                                        </div>
+                                    </div>
+                                    <div class="pitsa__savatga">
+                                        <button>Savatga qo'shish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                        <!-- card 2/2 start  -->
+                        <div onclick="showSix()" class="card">
+                            <img src="./assets/img/pitsa5 (2).webp" alt="">
+                            <h3>Peperoni</h3>
+                            <p>Pitsa barbekyu va burger souslar solingan donar kabob va mol go'shti va pepironi
+                                kolbasasi bilaln haqiqiy </p>
+                            <strong>53 000 so'mdan</strong>
+                        </div>
+                        <!-- card 2/2 end  -->
+                        <div onclick="hideSix()" class="pitsa__wrapper" id="showcardSix">
+                            <div class="pitsa__info">
+                                <!-- 1 chi katta div -->
+                                <div class="pitsa__img">
+                                    <img src="./assets/img/pitsa5 (2).webp" alt="">
+                                    <strong>Peperoni</strong>
+                                    <p>Pitsa barbekyu va burger souslar solingan donar kabob va mol go'shti va pepironi kolbasasi bilaln haqiqiy</p>
+                                    <p class="pitsa__line"></p>
+                                    <b>Tanlangan bort:</b><span> Mavjud emas</span>
+                                    <b>Masalliqlar: </b><span> Tanlanmagan</span>
+                                    <div class="cena">
+                                        <strong>53 000 so'm </strong>
+                                    </div>
+                                </div>
+                                <!-- 2 chi katta div  -->
+                                <div class="pitsaInfo">
+                                    <div class="ichki">
+                                        <b>Pitsa kattaligi</b>
+                                        <button>Pitsa</button>
+                                        <div class="pitsa__turi">
+                                            <button>Qalin</button>
+                                            <select>
+                                                <option>Bort qo'shish</option>
+                                                <option>Bort qo'shish</option>
+                                                <option>Bort qo'shish</option>
+                                            </select>
+                                        </div>
+                                        <div class="pitsa__masalliq">
+                                            <b>Masalliqlarni tanlang</b>
+                                            <span>0</span>
+                                        </div>
+                                    </div>
+                                    <div class="pitsa__savatga">
+                                        <button>Savatga qo'shish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                        <!-- card 2/3 start  -->
+                        <div onclick="showSeven()" class="card">
+                            <img src="./assets/img/pitsa1.webp" alt="">
+                            <h3>Mr.PeP</h3>
+                            <p>Mazali Pepironi mayin mosorella bilan utg'unlikda ushbu pitsaning qutisini bolalar
+                                bo'yashlari mumkin</p>
+                            <strong>39 000 so'mdan</strong>
+                        </div>
+                        <!-- card 2/3 end  -->
+                        <div onclick="hideSeven()" class="pitsa__wrapper" id="showcardSeven">
+                            <div class="pitsa__info">
+                                <!-- 1 chi katta div -->
+                                <div class="pitsa__img">
+                                    <img src="./assets/img/pitsa1.webp" alt="">
+                                    <strong>Me PeP</strong>
+                                    <p>Mazali pepperoni mayin motsarella bilan uyg'unlikda. Ushbu pitsaning qutisini
+                                        bolalar bo'yashlari mumkin.</p>
+                                    <p class="pitsa__line"></p>
+                                    <b>Tanlangan bort:</b><span> Mavjud emas</span>
+                                    <b>Masalliqlar: </b><span> Tanlanmagan</span>
+                                    <div class="cena">
+                                        <strong>39 000 so'm </strong>
+                                    </div>
+                                </div>
+                                <!-- 2 chi katta div  -->
+                                <div class="pitsaInfo">
+                                    <div class="ichki">
+                                        <b>Pitsa kattaligi</b>
+                                        <button>Pitsa</button>
+                                        <div class="pitsa__turi">
+                                            <button>Qalin</button>
+                                            <select>
+                                                <option>Bort qo'shish</option>
+                                                <option>Bort qo'shish</option>
+                                                <option>Bort qo'shish</option>
+                                            </select>
+                                        </div>
+                                        <div class="pitsa__masalliq">
+                                            <b>Masalliqlarni tanlang</b>
+                                            <span>0</span>
+                                        </div>
+                                    </div>
+                                    <div class="pitsa__savatga">
+                                        <button>Savatga qo'shish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- card 2/4 start  -->
+                        <div onclick="showeyt()" class="card">
+                            <img src="./assets/img/pitsa2.webp" alt="">
+                            <h3>Frimen</h3>
+                            <p>Qarsildoq kartoshka fri va bolajonlar yoqtirgan sosiskalar Ushbu pitsaning qutisini
+                                bolalar bo'yashlari mumkin</p>
+                            <strong>39 000 so'mdan</strong>
+                        </div>
+                        <!-- card 2/4 end  -->
+                        <div onclick="hideeyt()" class="pitsa__wrapper" id="showcardEyt">
+                            <div class="pitsa__info">
+                                <!-- 1 chi katta div -->
+                                <div class="pitsa__img">
+                                    <img src="./assets/img/pitsa2.webp" alt="">
+                                    <strong>Frimen</strong>
+                                    <p>Qarsildoq kartoshka fri va bolajonlar yoqtirgan sosiskalar Ushbu pitsaning qutisini bolalar bo'yashlari mumkin.</p>
+                                    <p class="pitsa__line"></p>
+                                    <b>Tanlangan bort:</b><span> Mavjud emas</span>
+                                    <b>Masalliqlar: </b><span> Tanlanmagan</span>
+                                    <div class="cena">
+                                        <strong>39 000 so'm </strong>
+                                    </div>
+                                </div>
+                                <!-- 2 chi katta div  -->
+                                <div class="pitsaInfo">
+                                    <div class="ichki">
+                                        <b>Pitsa kattaligi</b>
+                                        <button>Pitsa</button>
+                                        <div class="pitsa__turi">
+                                            <button>Qalin</button>
+                                            <select>
+                                                <option>Bort qo'shish</option>
+                                                <option>Bort qo'shish</option>
+                                                <option>Bort qo'shish</option>
+                                            </select>
+                                        </div>
+                                        <div class="pitsa__masalliq">
+                                            <b>Masalliqlarni tanlang</b>
+                                            <span>0</span>
+                                        </div>
+                                    </div>
+                                    <div class="pitsa__savatga">
+                                        <button>Savatga qo'shish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <h3 class="title__card">Ichimliklar</h3>
+                    <div class="card__items">
+                        <div class="card">
+                            <img src="./assets/img/MOXITO1.webp" alt="">
+                            <p>Mongo-marakuya</p>
+                            <strong>15 000 so'm</strong>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/img/MOXITO2.webp" alt="">
+                            <p>Apelsin-sharbati</p>
+                            <strong>18 000 so'm</strong>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/img/MOXITO3.webp" alt="">
+                            <p>Coca-Cole 1.5l</p>
+                            <strong>19 000 so'm</strong>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/img/MOXITO4.webp" alt="">
+                            <p>Ice-Tea</p>
+                            <strong>17 000 so'm</strong>
+                        </div>
+                        <!-- birinchi torttalik cardlar tugadi  -->
+                        <div class="card">
+                            <img src="./assets/img/MOXITO5.webp" alt="">
+                            <p>Sprite</p>
+                            <strong>19 000 so'm</strong>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/img/MOXITO1.webp" alt="">
+                            <p>Mongo-marakuya</p>
+                            <strong>15 000 so'm</strong>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/img/MOXITO2.webp" alt="">
+                            <p>Apelsin-sharbati</p>
+                            <strong>18 000 so'm</strong>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/img/MOXITO3.webp" alt="">
+                            <p>Coca-Cole 1L</p>
+                            <strong>19 000 so'm</strong>
+                        </div>
+                    </div>
+                    <h3 class="title__card">Salatlar</h3>
+                    <div class="card__items">
+                        <div class="card">
+                            <img src="./assets/img/salat1.webp" alt="">
+                            <p>"Grecheskiy" salat</p>
+                            <strong>24 000 so'm</strong>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/img/salat2.webp" alt="">
+                            <p>"Sezar" salat</p>
+                            <strong>24 000 so'm</strong>
+                        </div>
+                    </div>
+                    <h3 class="title__card">Desertlar</h3>
+                    <div class="card__items">
+                        <div class="card">
+                            <img src="./assets/img/desert3.webp" alt="">
+                            <p>Sinnamon Rollar 8 ta</p>
+                            <strong>15 000 so'm</strong>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/img/desert2.webp" alt="">
+                            <p>Shokolatli Rondom</p>
+                            <strong>19 000 so'm</strong>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/img/desert4.webp" alt="">
+                            <p>Sinnamon Rollar 16 ta</p>
+                            <strong>28 000 so'm</strong>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/img/desert5.webp" alt="">
+                            <p>Sho'kolatli chizkeyk</p>
+                            <strong>22 000 so'm</strong>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/img/desert1.webp" alt="">
+                            <p>Classik chizkeyk</p>
+                            <strong>22 000 so'm</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer__wrapper">
+                <!-- 1 div  -->
+                <div class="footer__logo">
+                    <img src="./assets/img/head logo.webp" alt="">
+                    <p>Raqamga qong'iroq qiling 1174</p>
+                </div>
+                <!-- 2 div  -->
+                <div class="footer__link">
+                    <a href="#">Biz haqimizda</a>
+                    <a href="#">Ommaviy oferta</a>
+                    <a href="#">Maxfiylik siyosati</a>
+                    <a href="#">Halol sertifikati</a>
+                    <a href="#">Restoranlar</a>
+                </div>
+                <!-- 3 div  -->
+                <div class="footer__work">
+                    <a href="#">Bizning ish o'rinlarimiz</a>
+                </div>
+                <!-- 4 div  -->
+                <div class="footer__pay">
+                    <a href="#"><img src="./assets/img/Click-01_hjB080W.png" alt=""></a>
+                    <a href="#"><img src="./assets/img/zoomrad.png" alt=""></a>
+                    <a href="#"><img src="./assets/img/my_uzcard-removebg-preview.png" alt=""></a>
+                </div>
+                <!-- 5 div  -->
+                <div class="footer__net">
+                    <strong>Bizni kuzatib boring</strong><br>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

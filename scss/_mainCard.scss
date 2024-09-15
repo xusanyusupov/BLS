@@ -1,0 +1,307 @@
+main {
+    section {
+        .container {
+            .card__wrapper {
+                .title__card {
+                    padding: 30px 0;
+                }
+
+                .card__items {
+                    margin-top: 20px;
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-gap: 25px;
+
+                    .card {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        border-radius: $border-r;
+                        box-shadow: 0 0 20px #ddd;
+                        padding: 15px 10px;
+                        position: relative;
+                        transition: $transition;
+                        cursor: pointer;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+
+                        img {
+                            width: 240px;
+                            height: 160px;
+                            object-fit: contain;
+                        }
+
+                        .skidka {
+                            position: absolute;
+                            top: 83%;
+                            color: #8D8D8D;
+
+                            img {
+                                position: absolute;
+                                width: 86px;
+                                height: 17px;
+                                left: 0;
+                            }
+                        }
+                    }
+
+                    .pitsa__wrapper {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100vh;
+                        background-color: #00000065;
+                        display: none;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 102;
+
+                        .pitsa__info {
+                            max-width: 800px;
+                            padding: 50px;
+                            background-color: $bg-white;
+                            border-radius: $border-r;
+                            display: flex;
+
+                            img {
+                                width: 345px;
+                                height: 245px;
+                                object-fit: contain;
+                            }
+
+                            .pitsa__img {
+                                width: 50%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                gap: 5px;
+                            }
+
+                            .pitsaInfo {
+                                width: 50%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                align-items: center;
+                                gap: 20px;
+
+                                .ichki {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 20px;
+                                    width: 100%;
+
+                                    button {
+                                        padding: 15px 25px;
+                                        border-radius: $border-r;
+                                        background-color: $bg-white;
+                                        border: 8px solid #F0F0F0;
+                                    }
+
+                                    .pitsa__turi {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 5px;
+
+                                        select,
+                                        button {
+                                            width: 50%;
+                                            outline: none;
+                                            border: 0;
+                                            padding: 10px 20px;
+                                            border-radius: $border-r;
+                                        }
+
+                                        button {
+                                            border: 4px solid #F0F0F0;
+                                        }
+
+                                        select {
+                                            background-color: #FFC600;
+                                        }
+                                    }
+
+                                    .pitsa__masalliq {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+
+                                        span {
+                                            padding: 8px 14px;
+                                            background-color: red;
+                                            border-radius: 50%;
+                                            color: $bg-white;
+                                        }
+                                    }
+
+                                    button {
+                                        width: 100%;
+                                    }
+                                }
+
+                                .pitsa__savatga {
+                                    width: 100%;
+
+                                    button {
+                                        width: 100%;
+                                        padding: 10px 25px;
+                                        border-radius: $border-r;
+                                        background-color: #FFC600;
+                                        border: 1px solid #FFC600;
+                                        cursor: pointer;
+                                        transition: $transition;
+
+                                        &:hover {
+                                            background-color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .pitsa__card {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    main {
+        section {
+            .container {
+                .card__wrapper {
+                    .card__items {
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+
+                    .pitsa__wrapper {
+                        .pitsa__info {
+                            width: 800px;
+                            padding: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        section {
+            .container {
+                .card__wrapper {
+                    .card__items {
+                        grid-template-columns: repeat(2, 1fr);
+
+                        .card {
+                            align-items: center;
+                        }
+
+                        .pitsa__wrapper {
+                            .pitsa__info {
+                                width: 400px;
+                                flex-direction: column;
+
+                                .pitsa__img {
+                                    display: flex;
+                                    text-align: center;
+
+                                    p, b, span {
+                                        display: none;
+                                    }
+                                }
+
+                                .pitsaInfo {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        section {
+            .container {
+                .card__wrapper {
+                    .card__items {
+                        grid-template-columns: repeat(2, 1fr);
+
+                        .card {
+                            align-items: center;
+                        }
+
+                        .pitsa__wrapper {
+                            width: 100%;
+                            height: 100vh;
+
+                            .pitsa__info {
+                                width: 400px;
+                                flex-direction: column;
+
+                                .pitsa__img {
+                                    display: none;
+                                }
+
+                                .pitsaInfo {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    main {
+        section {
+            .container {
+                .card__wrapper {
+                    .card__items {
+                        grid-template-columns: repeat(1, 1fr);
+
+                        .card {
+                            align-items: center;
+                        }
+
+                        .pitsa__wrapper {
+                            width: 100%;
+                            height: 100vh;
+
+                            .pitsa__info {
+                                width: 400px;
+                                flex-direction: column;
+
+                                .pitsa__img {
+                                    display: none;
+                                }
+
+                                .pitsaInfo {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
